@@ -1,0 +1,17 @@
+{% extends 'hell.html' %}
+{% block content1 %}
+    <h1>Sign in</h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(size=48) }}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=48) }}
+        </p>
+        <p>{{ form.remember_me() }}{{ form.remember_me.label }}</p>
+        <p>{{ form.sumbit }}</p>
+    </form>
+{% endblock %}

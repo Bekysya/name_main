@@ -1,0 +1,10 @@
+{% extends 'hell.html' %}
+{% block content %}
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} написал:<b>{{post.body}}</b></p></div>
+    {% endfor %}
+{% endblock %}
+
+{% block title %}
+{{title}}
+{% endblock %}
